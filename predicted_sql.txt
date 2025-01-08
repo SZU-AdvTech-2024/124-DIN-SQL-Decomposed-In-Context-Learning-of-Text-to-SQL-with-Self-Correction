@@ -1,0 +1,1 @@
+SELECT count(DISTINCT Language) as numLanguages, Continent  FROM countrylanguage  JOIN country ON country.Code = countrylanguage.CountryCode  GROUP BY Continent  ORDER BY numLanguages DESC  LIMIT 1
